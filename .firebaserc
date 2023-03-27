@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "mgbfrontend"
-  }
+    "default": "mgbfrontend",
+    "front end": "front-end-e3cf3"
+  },
+  "targets": {},
+  "etags": {}
 }
