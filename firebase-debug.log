@@ -1,0 +1,73 @@
+[debug] [2023-03-27T02:21:06.902Z] ----------------------------------------------------------------------
+[debug] [2023-03-27T02:21:06.904Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\franc\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-03-27T02:21:06.905Z] CLI Version:   11.25.1
+[debug] [2023-03-27T02:21:06.905Z] Platform:      win32
+[debug] [2023-03-27T02:21:06.905Z] Node Version:  v18.15.0
+[debug] [2023-03-27T02:21:06.906Z] Time:          Sun Mar 26 2023 23:21:06 GMT-0300 (hora estándar de Argentina)
+[debug] [2023-03-27T02:21:06.906Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-27T02:21:06.991Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-27T02:21:06.992Z] > authorizing via signed-in user (francoberlochi@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\franc\OneDrive\Escritorio\proyectos\Proyecto Integrador\Proyecto-Integrador_Franco-berlochi\Proyecto-Integrador\Front
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-03-27T02:21:26.877Z] Using project from CLI flag: mgbfrontend
+[debug] [2023-03-27T02:21:26.880Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mgbfrontend [none]
+[debug] [2023-03-27T02:21:27.268Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mgbfrontend 403
+[debug] [2023-03-27T02:21:27.268Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mgbfrontend {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-03-27T02:21:27.269Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-03-27T02:21:27.270Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\franc\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\franc\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project mgbfrontend. Please make sure the project exists and your account has permission to access it.
+[debug] [2023-03-27T02:22:08.396Z] ----------------------------------------------------------------------
+[debug] [2023-03-27T02:22:08.398Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\franc\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-03-27T02:22:08.399Z] CLI Version:   11.25.1
+[debug] [2023-03-27T02:22:08.399Z] Platform:      win32
+[debug] [2023-03-27T02:22:08.399Z] Node Version:  v18.15.0
+[debug] [2023-03-27T02:22:08.400Z] Time:          Sun Mar 26 2023 23:22:08 GMT-0300 (hora estándar de Argentina)
+[debug] [2023-03-27T02:22:08.401Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-03-27T02:22:08.486Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-03-27T02:22:08.487Z] > authorizing via signed-in user (francoberlochi@gmail.com)
+[debug] [2023-03-27T02:22:08.487Z] [iam] checking project mgbfrontend for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-03-27T02:22:08.490Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mgbfrontend:testIamPermissions [none]
+[debug] [2023-03-27T02:22:08.490Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mgbfrontend:testIamPermissions x-goog-quota-user=projects/mgbfrontend
+[debug] [2023-03-27T02:22:08.490Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mgbfrontend:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-03-27T02:22:09.474Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mgbfrontend:testIamPermissions 200
+[debug] [2023-03-27T02:22:09.474Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mgbfrontend:testIamPermissions {}
+[debug] [2023-03-27T02:22:09.474Z] [iam] error while checking permissions, command may fail: FirebaseError: Authorization failed. This account is missing the following required permissions on project mgbfrontend:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2023-03-27T02:22:09.475Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mgbfrontend [none]
+[debug] [2023-03-27T02:22:09.758Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mgbfrontend 403
+[debug] [2023-03-27T02:22:09.759Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mgbfrontend {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2023-03-27T02:22:09.760Z] HTTP Error: 403, The caller does not have permission
+[debug] [2023-03-27T02:22:09.761Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\franc\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\franc\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:288:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project mgbfrontend. Please make sure the project exists and your account has permission to access it.
